@@ -1,0 +1,69 @@
+// @font-face {
+// 	font-family: "Manrope";
+// 	src: url("SFProDisplay-Regular.eot");
+// 	src: url("SFProDisplay-Regular.eot?#iefix") format("embedded-opentype"),
+// 		url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+// 		url("../fonts/SFProDisplay-Regular.woff") format("woff");
+// 	font-weight: 400;
+// 	font-style: normal;
+// }
+
+@font-face {
+	font-family: "Manrope";
+	src: url("./../../Assets/Fonts/Manrope-Bold.eot");
+	src: local("Manrope Regular"), local("Manrope-Regular"),
+		url("./../../Assets/Fonts/Manrope-Regular.eot") format("embedded-opentype"),
+		url("../../Assets/Fonts/Manrope-Regular.woff2") format("woff2"),
+		url("../../Assets/Fonts/Manrope-Regular.woff") format("woff"),
+		url("../../Assets/Fonts/Manrope-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Manrope";
+	src: url("../../Assets/Fonts/Manrope-Bold.eot");
+	src: local("Manrope Bold"), local("Manrope-Bold"),
+		url("../../Assets/Fonts/Manrope-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../../Assets/Fonts/Manrope-Bold.woff2") format("woff2"),
+		url("../../Assets/Fonts/Manrope-Bold.woff") format("woff"),
+		url("../../Assets/Fonts/Manrope-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Manrope";
+	src: url("../../Assets/Fonts/Manrope-Semibold.eot");
+	src: local("Manrope Semibold"), local("Manrope-Semibold"),
+		url("../../Assets/Fonts/Manrope-Semibold.eot?#iefix") format("embedded-opentype"),
+		url("../../Assets/Fonts/Manrope-Semibold.woff2") format("woff2"),
+		url("../../Assets/Fonts/Manrope-Semibold.woff") format("woff"),
+		url("../../Assets/Fonts/Manrope-Semibold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Manrope";
+	src: url("../../Assets/Fonts/Manrope-Medium.eot");
+	src: local("Manrope Medium"), local("Manrope-Medium"),
+		url("../../Assets/Fonts/Manrope-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../../Assets/Fonts/Manrope-Medium.woff2") format("woff2"),
+		url("../../Assets/Fonts/Manrope-Medium.woff") format("woff"),
+		url("../../Assets/Fonts/Manrope-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Manrope";
+	src: url("../../Assets/Fonts/Manrope-ExtraBold.eot");
+	src: local("Manrope ExtraBold"), local("Manrope-ExtraBold"),
+		url("../../Assets/Fonts/Manrope-ExtraBold.eot?#iefix") format("embedded-opentype"),
+		url("../../Assets/Fonts/Manrope-ExtraBold.woff2") format("woff2"),
+		url("../../Assets/Fonts/Manrope-ExtraBold.woff") format("woff"),
+		url("../../Assets/Fonts/Manrope-ExtraBold.ttf") format("truetype");
+	font-weight: 800;
+	font-style: normal;
+}

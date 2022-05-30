@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	width: 100vw;
+	position: relative;
+	font-family: "Manrope", sans-serif;
+	overflow-x: hidden;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+button {
+	color: currentColor;
+	border: transparent;
+	background: transparent;
+	cursor: pointer;
+	&::-moz-focus-inner {
+		padding: 0;
+		border: 0;
+	}
+}
+picture {
+	font-size: 0;
+}
+ul,
+ol {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 400;
+	font-size: inherit;
+	font-weight: inherit;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+address {
+	font-style: normal;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+#root {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+main {
+	// margin-top: 110px;
+	flex-grow: 1;
+}
+footer {
+	margin-top: auto;
+}
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 130px;
+}
+.non-scroll {
+	overflow: hidden;
+}
+@media (max-width: 1439px) {
+	.container {
+		padding: 0 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		padding: 0 20px;
+	}
+}
