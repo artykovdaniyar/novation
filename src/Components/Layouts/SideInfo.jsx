@@ -38,10 +38,10 @@ const sideInfoStyle = css`
 	@media screen and (max-width: 800px) {
 		width: 100%;
 		right: 0;
-		bottom: -100%;
+		bottom: -100vh;
 		transition: 1s transform ease;
 		&.active {
-			transform: translateY(-100%);
+			transform: translateY(-100vh);
 		}
 	}
 `;
@@ -56,7 +56,7 @@ const SideInfo = ({ children, sideInfoIndex = true, state, setState, stateValue 
 		return () => {
 			dispatch(toggleSideInfoState(false));
 		};
-	}, [state]);
+	}, [state, dispatch, sideInfoIndex]);
 
 	return (
 		<>
