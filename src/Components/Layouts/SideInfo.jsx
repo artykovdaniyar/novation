@@ -11,7 +11,7 @@ const sideInfoStyle = css`
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	width: 50%;
-	height: 100vh;
+	height: 100%;
 	right: -100%;
 	bottom: 0;
 	overflow-y: scroll;
@@ -38,10 +38,10 @@ const sideInfoStyle = css`
 	@media screen and (max-width: 800px) {
 		width: 100%;
 		right: 0;
-		bottom: -100vh;
+		bottom: -100%;
 		transition: 1s transform ease;
 		&.active {
-			transform: translateY(-100vh);
+			transform: translateY(-100%);
 		}
 	}
 `;
