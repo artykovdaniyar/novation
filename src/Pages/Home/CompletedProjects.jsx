@@ -8,28 +8,28 @@ import Blind from "../../Components/UI/Blind";
 import squareIcon from "../../Assets/Img/Icons/area-back.svg";
 import bedIcon from "../../Assets/Img/Icons/bed.svg";
 
-import projectTab1Img from "../../Assets/Img/project-tab1.jpg";
+import projectTab1Img from "../../Assets/Img/project-tab1.png";
 import projectTab11Img from "../../Assets/Img/project-tab1-1.jpg";
 import projectTab12Img from "../../Assets/Img/project-tab1-2.jpg";
 
-import projectTab2Img from "../../Assets/Img/project-tab2.jpg";
+import projectTab2Img from "../../Assets/Img/project-tab2.png";
 import projectTab21Img from "../../Assets/Img/project-tab2-1.jpg";
 import projectTab22Img from "../../Assets/Img/project-tab2-2.jpg";
 
-import projectTab3Img from "../../Assets/Img/project-tab3.jpg";
+import projectTab3Img from "../../Assets/Img/project-tab3.png";
 import projectTab31Img from "../../Assets/Img/project-tab3-1.jpg";
 import projectTab32Img from "../../Assets/Img/project-tab3-2.jpg";
 import projectTab33Img from "../../Assets/Img/project-tab3-3.jpg";
 
-import projectTab5Img from "../../Assets/Img/project-tab5.jpg";
+import projectTab5Img from "../../Assets/Img/project-tab5.png";
 import projectTab51Img from "../../Assets/Img/project-tab5-1.jpg";
 import projectTab52Img from "../../Assets/Img/project-tab5-2.jpg";
 
-import projectTab6Img from "../../Assets/Img/project-tab6.jpg";
+import projectTab6Img from "../../Assets/Img/project-tab6.png";
 import projectTab61Img from "../../Assets/Img/project-tab6-1.jpg";
 import projectTab62Img from "../../Assets/Img/project-tab6-2.jpg";
 
-import projectTab7Img from "../../Assets/Img/project-tab7.jpg";
+import projectTab7Img from "../../Assets/Img/project-tab7.png";
 import projectTab71Img from "../../Assets/Img/project-tab7-1.jpg";
 import projectTab72Img from "../../Assets/Img/project-tab7-2.jpg";
 
