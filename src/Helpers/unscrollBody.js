@@ -20,13 +20,20 @@ const scrolled = () => {
 	document.body.style.marginRight = `0px`;
 };
 
-const unscrollBody = () => {
-	if (!document.body.classList.contains("non-scroll")) {
+const unscrollBody = (stateValue) => {
+	if (stateValue) {
 		document.body.classList.add("non-scroll");
 		nonScrolled();
 	} else {
 		document.body.classList.remove("non-scroll");
 		scrolled();
 	}
+	// if (!document.body.classList.contains("non-scroll")) {
+	// 	document.body.classList.add("non-scroll");
+	// 	nonScrolled();
+	// } else {
+	// 	document.body.classList.remove("non-scroll");
+	// 	scrolled();
+	// }
 };
 export default unscrollBody;

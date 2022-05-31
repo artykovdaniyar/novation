@@ -93,7 +93,7 @@ const styleTabsStyle = css`
 			}
 		}
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
 		.section-header {
 			flex-direction: column;
 			align-items: flex-start;

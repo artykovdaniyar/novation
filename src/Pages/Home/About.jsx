@@ -41,6 +41,10 @@ const AboutStyle = css`
 		font-weight: 600;
 		margin: 37px 0;
 	}
+	.about__paragraph--grey {
+		color: #606067;
+		font-size: 15px;
+	}
 	.about__contacts {
 		margin-top: 10px;
 	}
@@ -157,11 +161,11 @@ const About = () => {
 							Строим и проектируем современные качественные дома, обеспечивая при этом высокий
 							уровень сервиса для наших клиентов на всех этапах взаимодействия.
 						</p>
-						<p className="about__paragraph">
+						<p className="about__paragraph about__paragraph--grey">
 							По состоянию на конец 2021 года нами построено более 800 домов (из них 90% домов
 							построено по нашим типовым проектам).
 						</p>
-						<p className="about__paragraph">
+						<p className="about__paragraph about__paragraph--grey">
 							Опыт и и компетенции нашей проектно-строительной компании позволяют создавать
 							современные дома высокого качества с оптимальной стоимостью строительства.
 						</p>

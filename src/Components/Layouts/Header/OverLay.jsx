@@ -2,7 +2,6 @@ import React from "react";
 import { css } from "@emotion/css";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleSideNav } from "../../../Redux/reducers/navSlice";
-import unscrollBody from "../../../Helpers/unscrollBody";
 
 const OverLayStyle = css`
 	display: none;
@@ -40,7 +39,6 @@ const OverLay = () => {
 		<div
 			onClick={() => {
 				dispatch(toggleSideNav());
-				unscrollBody();
 			}}
 			className={`${OverLayStyle} ${isSideNavOpened ? "active" : ""}`}
 		></div>

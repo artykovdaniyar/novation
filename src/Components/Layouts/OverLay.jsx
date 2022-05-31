@@ -1,6 +1,5 @@
 import React from "react";
 import { css } from "@emotion/css";
-import unscrollBody from "../../Helpers/unscrollBody";
 
 const OverLayStyle = css`
 	display: none;
@@ -33,7 +32,6 @@ const OverLay = ({ state, setState, stateValue = false }) => {
 		<div
 			onClick={() => {
 				setState(stateValue);
-				unscrollBody();
 			}}
 			className={`${OverLayStyle} ${state > 0 || state === true ? "active" : ""}`}
 		></div>

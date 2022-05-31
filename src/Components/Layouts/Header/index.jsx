@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleSideNav } from "../../../Redux/reducers/navSlice";
 import SideNav from "./SideNav";
 import OverLay from "./OverLay";
-import unscrollBody from "../../../Helpers/unscrollBody";
 import logoImg from "../../../Assets/Img/Icons/logo.svg";
 
 const headerStyles = css`
@@ -184,12 +183,10 @@ const Header = () => {
 	const [isHeaderNavOpened, setIsHeaderNavOpened] = useState(false);
 	const dispatch = useDispatch();
 	const isSideNavOpened = useSelector((state) => state.nav.isSideNavOpened);
-	const isSideInfoOpened = useSelector((state) => state.sideInfo.isSideInfoOpened);
 
 	function openMenuHandler(event) {
 		event.target.classList.toggle("active");
 		dispatch(toggleSideNav());
-		unscrollBody();
 	}
 
 	useEffect(() => {

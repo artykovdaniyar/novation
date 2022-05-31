@@ -160,7 +160,7 @@ const topicTabsStyle = css`
 			}
 		}
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
 		.header {
 			flex-direction: column;
 			padding-bottom: 40px;

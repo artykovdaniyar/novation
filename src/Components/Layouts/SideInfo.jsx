@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { css } from "@emotion/css";
 import unscrollBody from "../../Helpers/unscrollBody";
-import { useDispatch } from "react-redux";
-import { toggleSideInfoState } from "../../Redux/reducers/sideInfoSlice";
 
 const sideInfoStyle = css`
 	position: fixed;
@@ -23,7 +21,7 @@ const sideInfoStyle = css`
 		transform: translateX(-200%);
 	}
 	svg {
-		transition: 0.3s color ease;
+		transition: transform 0.3s;
 	}
 	.close-btn {
 		position: absolute;
@@ -32,6 +30,7 @@ const sideInfoStyle = css`
 		padding: 20px;
 		&:hover svg {
 			color: red;
+			transform: rotate(180deg);
 		}
 	}
 
@@ -47,16 +46,9 @@ const sideInfoStyle = css`
 `;
 
 const SideInfo = ({ children, sideInfoIndex = true, state, setState, stateValue = false }) => {
-	const dispatch = useDispatch();
-
 	useEffect(() => {
-		if (state === sideInfoIndex) {
-			dispatch(toggleSideInfoState(true));
-		}
-		return () => {
-			dispatch(toggleSideInfoState(false));
-		};
-	}, [state, dispatch, sideInfoIndex]);
+		unscrollBody(state);
+	}, [state]);
 
 	return (
 		<>
@@ -64,7 +56,6 @@ const SideInfo = ({ children, sideInfoIndex = true, state, setState, stateValue 
 				<button
 					onClick={() => {
 						setState(stateValue);
-						unscrollBody();
 					}}
 					className="close-btn"
 				>

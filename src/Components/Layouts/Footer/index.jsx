@@ -2,7 +2,7 @@ import React from "react";
 import { css } from "@emotion/css";
 import { NavLink } from "react-router-dom";
 
-const FooterStyles = css`
+const footerStyles = css`
 	padding: 130px 40px 30px;
 	max-width: 100%;
 	width: 100%;
@@ -187,7 +187,7 @@ const FooterStyles = css`
 
 const Footer = () => {
 	return (
-		<footer className={FooterStyles}>
+		<footer className={footerStyles}>
 			<div className="footer__divider">
 				<a href="/" className="footer__divider-link">
 					<svg

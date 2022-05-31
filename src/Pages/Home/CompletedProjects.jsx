@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Container from "../../Components/Layouts/Container";
 import { css } from "@emotion/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import LinkArrow from "../../Components/UI/LinkArrow";
@@ -321,7 +320,7 @@ const CompletedProjects = () => {
 						0: {
 							slidesPerView: 3,
 						},
-						768: {
+						767: {
 							slidesPerView: 5,
 						},
 						1023: {

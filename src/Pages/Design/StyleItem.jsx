@@ -18,7 +18,7 @@ const styleItemStyle = css`
 const StyleItem = ({ project, img }) => {
 	return (
 		<li className={styleItemStyle}>
-			<Link to="/">
+			<Link to={`/projects/${project.number}`}>
 				<img className="img" src={img} alt="Изображение проекта" />
 				<h4 className="title">Проект №{project.number}</h4>
 			</Link>

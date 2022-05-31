@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SideNavItem from "./SideNavItem";
 import { useSelector } from "react-redux";
 import { css } from "@emotion/css";
-
+import unscrollBody from "../../../Helpers/unscrollBody";
 const SideNavStyle = css`
 	display: none;
 	.nav {
@@ -59,6 +59,9 @@ const SideNavStyle = css`
 const SideNav = () => {
 	const isSideNavOpened = useSelector((state) => state.nav.isSideNavOpened);
 	const pages = useSelector((state) => state.nav.navLinks);
+	useEffect(() => {
+		unscrollBody(isSideNavOpened);
+	}, [isSideNavOpened]);
 	return (
 		<nav className={`${SideNavStyle} ${isSideNavOpened ? "active" : ""}`}>
 			<ul className="nav__list">

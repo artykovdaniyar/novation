@@ -13,7 +13,6 @@ import standartImg7 from "../../../Assets/Img/standart7.jpg";
 import standartImg8 from "../../../Assets/Img/standart8.jpg";
 import standartImg9 from "../../../Assets/Img/standart9.jpg";
 import standartImg10 from "../../../Assets/Img/standart10.jpg";
-import unscrollBody from "../../../Helpers/unscrollBody";
 
 const standartGridStyle = css`
 	.standart__container {
@@ -129,7 +128,6 @@ const standartGridStyle = css`
 const StandartGrid = ({ setState }) => {
 	const openSideInfoHandler = (index) => {
 		setState(index);
-		unscrollBody();
 	};
 	return (
 		<section className={standartGridStyle}>

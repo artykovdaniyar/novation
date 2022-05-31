@@ -1,6 +1,5 @@
 import React from "react";
 import { css } from "@emotion/css";
-import unscrollBody from "../../Helpers/unscrollBody";
 
 const arrowButtonStyle = css`
 	display: flex;
@@ -15,10 +14,10 @@ const arrowButtonStyle = css`
 	.link__icon {
 		transform: translateY(1px);
 		margin-left: 10px;
-		transition: 0.3s all;
+		transition: 0.3s transform;
 	}
 	&:hover > .link__icon {
-		margin-left: 15px;
+		transform: translate(6px, 1px);
 	}
 	@media screen and (max-width: 767px) {
 		white-space: wrap;
@@ -28,7 +27,6 @@ const arrowButtonStyle = css`
 const ArrowButton = ({ children, setState, className, sideInfoIndex }) => {
 	const onCLickHandler = () => {
 		setState(sideInfoIndex);
-		unscrollBody();
 	};
 	return (
 		<button onClick={onCLickHandler} className={`${arrowButtonStyle} ${className}`}>

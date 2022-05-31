@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SectionTitle from "../../Components/UI/SectionTitle";
 import { css } from "@emotion/css";
 
@@ -70,19 +70,60 @@ const schemeStyle = css`
 			grid-template-columns: 1fr;
 		}
 		.scheme__item {
-			height: auto;
+			position: relative;
+			overflow: hidden;
+			height: 90px;
 			border: 1px solid #d8d8d8;
 			padding: 15px;
+			transition: height 0.5s ease;
+		}
+		.scheme__item.active {
+			height: 390px;
+			&::before {
+				opacity: 0;
+			}
+		}
+		.scheme__item::before {
+			position: absolute;
+			content: "";
+			display: block;
+			width: 16px;
+			height: 16px;
+			clip-path: polygon(100% 3%, 0% 100%, 100% 100%);
+			background: var(--primary-color);
+			bottom: 0;
+			right: 0;
+			transition: opacity 1s ease;
+		}
+
+		.info__list {
+			height: 305px;
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+			flex-direction: column;
 		}
 	}
 `;
 
 const Scheme = () => {
+	const [activeCollapseTab, setActiveCollapseTab] = useState(0);
+
+	const openCollapseTabHandeler = (index) => {
+		if (activeCollapseTab === index) {
+			setActiveCollapseTab(0);
+		} else {
+			setActiveCollapseTab(index);
+		}
+	};
 	return (
 		<section className={schemeStyle}>
 			<SectionTitle className="title">Схема работы</SectionTitle>
 			<ul className="scheme__list">
-				<li className="scheme__item">
+				<li
+					className={`scheme__item ${activeCollapseTab === 1 ? "active" : ""}`}
+					onClick={() => openCollapseTabHandeler(1)}
+				>
 					<header className="scheme__header">
 						<span className="header__number">No.1</span>
 						<h3 className="header__title">ОБЩЕНИЕ ПО ТЕЛЕФОНУ</h3>
@@ -105,7 +146,10 @@ const Scheme = () => {
 					</div>
 				</li>
 
-				<li className="scheme__item">
+				<li
+					className={`scheme__item ${activeCollapseTab === 2 ? "active" : ""}`}
+					onClick={() => openCollapseTabHandeler(2)}
+				>
 					<header className="scheme__header">
 						<span className="header__number">No.2</span>
 						<h3 className="header__title">КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ И ЗАКЛЮЧЕНИЕ ДОГОВОРА</h3>
@@ -128,7 +172,10 @@ const Scheme = () => {
 					</div>
 				</li>
 
-				<li className="scheme__item">
+				<li
+					className={`scheme__item ${activeCollapseTab === 3 ? "active" : ""}`}
+					onClick={() => openCollapseTabHandeler(3)}
+				>
 					<header className="scheme__header">
 						<span className="header__number">No.3</span>
 						<h3 className="header__title">СДАЧА РАБОТ</h3>

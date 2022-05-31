@@ -5,7 +5,6 @@ import PageHeader from "../../Components/UI/PageHeader";
 import PageTitle from "../../Components/UI/PageTitle";
 import ProjectList from "./ProjectList";
 import SideInfo from "../../Components/Layouts/SideInfo";
-import unscrollBody from "../../Helpers/unscrollBody";
 import Title from "../../Components/Shared/Title";
 import { Fade } from "react-awesome-reveal";
 
@@ -225,7 +224,6 @@ const Projects = () => {
 	const [isSideFilterOpened, setIsSideFilterOpened] = useState(false);
 	const openSideFilterHandeler = (index) => {
 		setIsSideFilterOpened(index);
-		unscrollBody();
 	};
 
 	return (

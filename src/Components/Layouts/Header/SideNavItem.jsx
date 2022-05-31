@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "../../../Redux/reducers/navSlice";
 import { css } from "@emotion/css";
-import unscrollBody from "../../../Helpers/unscrollBody";
 
 const SideNavItemStyles = css`
 	@media screen and (max-width: 1439px) {
@@ -47,7 +46,6 @@ const SideNavItem = ({ page }) => {
 	const dispatch = useDispatch();
 	const clickSideNavLinkHandeler = () => {
 		dispatch(toggleSideNav());
-		unscrollBody();
 	};
 
 	return (

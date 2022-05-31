@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "@emotion/styled";
-import unscrollBody from "../../../Helpers/unscrollBody";
 
 const Button = styled.button`
 	position: relative;
@@ -28,7 +27,6 @@ const Button = styled.button`
 const ArrowBtn = ({ children, index, setState }) => {
 	const onClickHandler = (index) => {
 		setState(index);
-		unscrollBody();
 	};
 	return (
 		<Button onClick={() => onClickHandler(index)}>

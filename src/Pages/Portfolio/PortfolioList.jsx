@@ -13,7 +13,7 @@ const portfolioListStyle = css`
 	@media (max-width: 1024px) {
 		grid-template-columns: repeat(2, 1fr);
 	}
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
 		grid-template-columns: 1fr;
 	}
 `;
