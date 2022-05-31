@@ -17,6 +17,7 @@ const HeroSlider = () => {
 				navigation={true}
 				modules={[EffectFade, Pagination, Navigation]}
 				className="mySwiper"
+				loop={true}
 			>
 				<SwiperSlide>
 					<Link to="/projects/137">
