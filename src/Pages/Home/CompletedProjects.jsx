@@ -35,71 +35,7 @@ import projectTab72Img from "../../Assets/Img/project-tab7-2.jpg";
 
 const completedProjectsStyle = css`
 	position: relative;
-	.swiper {
-		flex-direction: column-reverse;
-		display: flex;
-		margin-left: auto;
-		margin-right: auto;
-		position: relative;
-		overflow: hidden;
-		list-style: none;
-		padding: 0;
-		z-index: 1;
-		height: 135px;
-		margin: 96px 0 60px;
-	}
-	.swiper-vertical > .swiper-wrapper {
-		flex-direction: column;
-	}
-	.swiper-wrapper {
-		position: relative;
-		width: 100%;
-		height: 515px;
-		z-index: 1;
-		display: flex;
-		transition-property: transform;
-		box-sizing: content-box;
-	}
-	.swiper-android .swiper-slide,
-	.swiper-wrapper {
-		transform: translate3d(0px, 0, 0);
-	}
-	.swiper-pointer-events {
-		touch-action: pan-y;
-	}
-	.swiper-pointer-events.swiper-vertical {
-		touch-action: pan-x;
-	}
-	.swiper-slide {
-		position: relative;
-		width: 100%;
-		/* min-width: 152.5px; */
-		height: 100%;
-		padding: 15px 8px;
-		flex-shrink: 0;
-		transition: padding 0.5s ease-in-out !important;
-		cursor: pointer;
-	}
-	.swiper-slide-active {
-		padding: 0;
-		.tabs_img-wrapper {
-			background: #05a984;
-			opacity: 0.8;
-			font-size: 20px;
-		}
-	}
-	.swiper-slide:hover {
-		padding: 0;
-	}
-	.swiper-slide:before {
-		content: "";
-		z-index: 3;
-		position: absolute;
-		top: 0;
-		left: -1px !important;
-		border: 1px solid #d8d8d8;
-		height: 100%;
-	}
+
 	.tabs_btn {
 		display: block;
 		width: 100%;
