@@ -329,7 +329,9 @@ const CompletedProjects = () => {
 				>
 					<SwiperSlide tag="button" onClick={() => selectTabHandler(1)}>
 						<div className="tabs_btn">
-							<img src={projectTab1Img} alt="tab img" className="tabs_img" />
+							{/* <img src={projectTab1Img} alt="tab img" className="tabs_img" /> */}
+							<img src={projectTab1Img} alt="" />
+
 							<div className="tabs_img-wrapper"></div>
 						</div>
 					</SwiperSlide>
