@@ -309,6 +309,23 @@ const CompletedProjects = () => {
 	return (
 		<section className={completedProjectsStyle}>
 			<div className="container">
+				<Swiper slidesPerView={7}>
+					<SwiperSlide>
+						<img src={projectTab1Img} alt="" className="tabs_img" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={projectTab1Img} alt="" className="tabs_img" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={projectTab1Img} alt="" className="tabs_img" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={projectTab1Img} alt="" className="tabs_img" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={projectTab1Img} alt="" className="tabs_img" />
+					</SwiperSlide>
+				</Swiper>
 				<Swiper
 					speed={500}
 					slideToClickedSlide={true}
@@ -328,10 +345,10 @@ const CompletedProjects = () => {
 					}}
 				>
 					<SwiperSlide tag="button" onClick={() => selectTabHandler(1)}>
-						<img src={projectTab1Img} alt="tab img" className="tabs_img" />
-						{/* <div className="tabs_btn">
+						<div className="tabs_btn">
+							<img src={projectTab1Img} alt="tab img" className="tabs_img" />
 							<div className="tabs_img-wrapper"></div>
-						</div> */}
+						</div>
 					</SwiperSlide>
 					<SwiperSlide tag="button" onClick={() => selectTabHandler(2)}>
 						<div className="tabs_btn">
