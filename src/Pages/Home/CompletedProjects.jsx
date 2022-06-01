@@ -331,7 +331,68 @@ const CompletedProjects = () => {
 					<SwiperSlide tag="button" onClick={() => selectTabHandler(1)}>
 						<div className="tabs_btn">
 							<img src={projectTab1Img} alt="tab img" className="tabs_img" />
+							{/* <div className="tabs_img-wrapper"></div> */}
+						</div>
+					</SwiperSlide>
+					<SwiperSlide tag="button" onClick={() => selectTabHandler(2)}>
+						<div className="tabs_btn">
+							<img src={projectTab2Img} alt="tab img" className="tabs_img" />
 							<div className="tabs_img-wrapper"></div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide tag="button" onClick={() => selectTabHandler(3)}>
+						<div className="tabs_btn">
+							<img src={projectTab3Img} alt="tab img" className="tabs_img" />
+							<div className="tabs_img-wrapper"></div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide tag="button" onClick={() => selectTabHandler(4)}>
+						<div className="tabs_btn">
+							<img src={projectTab3Img} alt="tab img" className="tabs_img" />
+							<div className="tabs_img-wrapper"></div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide tag="button" onClick={() => selectTabHandler(5)}>
+						<div className="tabs_btn">
+							<img src={projectTab5Img} alt="tab img" className="tabs_img" />
+							<div className="tabs_img-wrapper"></div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide tag="button" onClick={() => selectTabHandler(6)}>
+						<div className="tabs_btn">
+							<img src={projectTab6Img} alt="tab img" className="tabs_img" />
+							<div className="tabs_img-wrapper"></div>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide tag="button" onClick={() => selectTabHandler(7)}>
+						<div className="tabs_btn">
+							<img src={projectTab7Img} alt="tab img" className="tabs_img" />
+							<div className="tabs_img-wrapper"></div>
+						</div>
+					</SwiperSlide>
+				</Swiper>
+				<Swiper
+					speed={500}
+					slideToClickedSlide={true}
+					centeredSlides={true}
+					loop={true}
+					slidesPerView={7}
+					breakpoints={{
+						0: {
+							slidesPerView: 3,
+						},
+						767: {
+							slidesPerView: 5,
+						},
+						1023: {
+							slidesPerView: 7,
+						},
+					}}
+				>
+					<SwiperSlide tag="button" onClick={() => selectTabHandler(1)}>
+						<div className="tabs_btn">
+							<img src={projectTab1Img} alt="tab img" className="tabs_img" />
+							{/* <div className="tabs_img-wrapper"></div> */}
 						</div>
 					</SwiperSlide>
 					<SwiperSlide tag="button" onClick={() => selectTabHandler(2)}>
