@@ -331,7 +331,7 @@ const CompletedProjects = () => {
 					<SwiperSlide tag="button" onClick={() => selectTabHandler(1)}>
 						<div className="tabs_btn">
 							<img src={projectTab1Img} alt="tab img" className="tabs_img" />
-							{/* <div className="tabs_img-wrapper"></div> */}
+							<div className="tabs_img-wrapper"></div>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide tag="button" onClick={() => selectTabHandler(2)}>
@@ -371,67 +371,12 @@ const CompletedProjects = () => {
 						</div>
 					</SwiperSlide>
 				</Swiper>
-				<Swiper
-					speed={500}
-					slideToClickedSlide={true}
-					centeredSlides={true}
-					loop={true}
-					slidesPerView={7}
-					breakpoints={{
-						0: {
-							slidesPerView: 3,
-						},
-						767: {
-							slidesPerView: 5,
-						},
-						1023: {
-							slidesPerView: 7,
-						},
-					}}
-				>
-					<SwiperSlide tag="button" onClick={() => selectTabHandler(1)}>
-						<div className="tabs_btn">
-							<img src={projectTab1Img} alt="tab img" className="tabs_img" />
-							{/* <div className="tabs_img-wrapper"></div> */}
-						</div>
-					</SwiperSlide>
-					<SwiperSlide tag="button" onClick={() => selectTabHandler(2)}>
-						<div className="tabs_btn">
-							<img src={projectTab2Img} alt="tab img" className="tabs_img" />
-							<div className="tabs_img-wrapper"></div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide tag="button" onClick={() => selectTabHandler(3)}>
-						<div className="tabs_btn">
-							<img src={projectTab3Img} alt="tab img" className="tabs_img" />
-							<div className="tabs_img-wrapper"></div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide tag="button" onClick={() => selectTabHandler(4)}>
-						<div className="tabs_btn">
-							<img src={projectTab3Img} alt="tab img" className="tabs_img" />
-							<div className="tabs_img-wrapper"></div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide tag="button" onClick={() => selectTabHandler(5)}>
-						<div className="tabs_btn">
-							<img src={projectTab5Img} alt="tab img" className="tabs_img" />
-							<div className="tabs_img-wrapper"></div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide tag="button" onClick={() => selectTabHandler(6)}>
-						<div className="tabs_btn">
-							<img src={projectTab6Img} alt="tab img" className="tabs_img" />
-							<div className="tabs_img-wrapper"></div>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide tag="button" onClick={() => selectTabHandler(7)}>
-						<div className="tabs_btn">
-							<img src={projectTab7Img} alt="tab img" className="tabs_img" />
-							<div className="tabs_img-wrapper"></div>
-						</div>
-					</SwiperSlide>
-				</Swiper>
+				<img src={projectTab1Img} alt="12345" />
+				<img src={projectTab2Img} alt="12345" />
+				<img src={projectTab3Img} alt="12345" />
+				<img src={projectTab5Img} alt="12345" />
+				<img src={projectTab6Img} alt="12345" />
+				<img src={projectTab7Img} alt="12345" />
 				<ul className="tab-content__list">
 					<li className={`tab-content__item ${activeTabIndex === 1 ? "active" : ""}`}>
 						<Fade triggerOnce className="tab-content__wrapper">
