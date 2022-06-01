@@ -73,8 +73,7 @@ const completedProjectsStyle = css`
 	.swiper-slide {
 		position: relative;
 		width: 100%;
-		/* min-width: 152.5px; */
-		height: 100%;
+		height: 135px;
 		padding: 15px 8px;
 		flex-shrink: 0;
 		transition: padding 0.5s ease-in-out !important;
@@ -259,8 +258,8 @@ const completedProjectsStyle = css`
 		}
 	}
 	@media screen and (max-width: 767px) {
-		.swiper {
-			height: 23vw;
+		.swiper-slide {
+			height: 33vw;
 		}
 		.tabs_img {
 			width: 100%;
@@ -329,13 +328,13 @@ const CompletedProjects = () => {
 				>
 					<SwiperSlide tag="button" onClick={() => selectTabHandler(1)}>
 						<div className="tabs_btn">
-							<img src={projectTab1Img} alt="tab img" className="tabs_img" />
+							<img src={projectTab1Img} alt="tab img" className="tabs_img blue red" />
 							<div className="tabs_img-wrapper"></div>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide tag="button" onClick={() => selectTabHandler(2)}>
 						<div className="tabs_btn">
-							<img src={projectTab2Img} alt="tab img" className="tabs_img" />
+							<img src={projectTab2Img} alt="tab img" className="tabs_img reb blue" />
 							<div className="tabs_img-wrapper"></div>
 						</div>
 					</SwiperSlide>
