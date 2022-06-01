@@ -101,16 +101,16 @@ const completedProjectsStyle = css`
 		height: 100%;
 	}
 	.tabs_btn {
-		/* display: block;
+		display: block;
 		width: 100%;
 		height: 100%;
-		position: relative; */
+		position: relative;
 	}
 
 	.tabs_img {
 		width: 100%;
 		height: 100%;
-		/* object-fit: none; */
+		object-fit: none;
 	}
 	.swiper-slide:hover .tabs_img-wrapper {
 		background: #05a984;
@@ -118,7 +118,7 @@ const completedProjectsStyle = css`
 		font-size: 20px;
 	}
 	.tabs_img-wrapper {
-		/* width: 100%;
+		width: 100%;
 		height: 100%;
 		display: flex;
 		opacity: 0.4;
@@ -128,7 +128,7 @@ const completedProjectsStyle = css`
 		line-height: 1.2;
 		font-size: 14px;
 		font-weight: 600;
-		transition: background 0.4s ease-in-out, opacity 0.4s ease-in; */
+		transition: background 0.4s ease-in-out, opacity 0.4s ease-in;
 	}
 
 	.tab-content {
@@ -328,12 +328,10 @@ const CompletedProjects = () => {
 					}}
 				>
 					<SwiperSlide tag="button" onClick={() => selectTabHandler(1)}>
-						<div className="tabs_btn">
-							{/* <img src={projectTab1Img} alt="tab img" className="tabs_img" /> */}
-							<img src={projectTab1Img} alt="" />
-
+						<img src={projectTab1Img} alt="tab img" className="tabs_img" />
+						{/* <div className="tabs_btn">
 							<div className="tabs_img-wrapper"></div>
-						</div>
+						</div> */}
 					</SwiperSlide>
 					<SwiperSlide tag="button" onClick={() => selectTabHandler(2)}>
 						<div className="tabs_btn">
