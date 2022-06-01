@@ -76,26 +76,23 @@ const completedProjectsStyle = css`
 		height: 135px;
 		padding: 15px 8px;
 		flex-shrink: 0;
-		transition: padding 0.5s ease-in-out !important;
+		transition: padding 0.5s ease-in-out;
 		cursor: pointer;
 	}
 	.swiper-slide-active {
-		padding: 0;
+		padding: 0 !important;
 		.tabs_img-wrapper {
 			background: #05a984;
 			opacity: 0.8;
 			font-size: 20px;
 		}
 	}
-	.swiper-slide:hover {
-		padding: 0;
-	}
 	.swiper-slide:before {
 		content: "";
 		z-index: 3;
 		position: absolute;
 		top: 0;
-		left: -1px !important;
+		left: -1px;
 		border: 1px solid #d8d8d8;
 		height: 100%;
 	}
@@ -259,7 +256,7 @@ const completedProjectsStyle = css`
 	}
 	@media screen and (max-width: 767px) {
 		.swiper-slide {
-			height: 33vw;
+			height: 23vw;
 		}
 		.tabs_img {
 			width: 100%;
