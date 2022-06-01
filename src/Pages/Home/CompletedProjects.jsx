@@ -110,7 +110,7 @@ const completedProjectsStyle = css`
 	.tabs_img {
 		width: 100%;
 		height: 100%;
-		object-fit: none;
+		/* object-fit: none; */
 	}
 	.swiper-slide:hover .tabs_img-wrapper {
 		background: #05a984;
