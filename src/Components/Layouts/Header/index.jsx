@@ -200,7 +200,7 @@ const Header = () => {
 			} else if (scrollBefore > scrolled) {
 				scrollBefore = scrolled;
 				setIsHeaderNavOpened(true);
-			} else {
+			} else if (scrollBefore < scrolled && scrolled > 54) {
 				scrollBefore = scrolled;
 				setIsHeaderNavOpened(false);
 			}

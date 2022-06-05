@@ -181,262 +181,301 @@ const PortfolioDetails = () => {
 		<Fade triggerOnce className={portfolioDetailsStyle}>
 			<Container>
 				<div className="portfolio-details__row">
-					<ul className="portfolio-details__gallery">
-						<Fancybox>
-							<li className="portfolio-details__item">
-								<a href={portfolioImg1} data-fancybox="gallery" className="portfolio-details__link">
-									<img
-										src={portfolioImg1}
-										alt="Изображения стройки дома"
-										className="portfolio-details__img"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a href={portfolioImg2} data-fancybox="gallery" className="portfolio-details__link">
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg2}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a href={portfolioImg3} data-fancybox="gallery" className="portfolio-details__link">
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg3}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a href={portfolioImg4} data-fancybox="gallery" className="portfolio-details__link">
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg4}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a href={portfolioImg5} data-fancybox="gallery" className="portfolio-details__link">
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg5}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a href={portfolioImg6} data-fancybox="gallery" className="portfolio-details__link">
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg6}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a href={portfolioImg7} data-fancybox="gallery" className="portfolio-details__link">
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg7}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a href={portfolioImg8} data-fancybox="gallery" className="portfolio-details__link">
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg8}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
+					<Fade triggerOnce delay="150">
+						<ul className="portfolio-details__gallery">
+							<Fancybox>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg1}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											src={portfolioImg1}
+											alt="Изображения стройки дома"
+											className="portfolio-details__img"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg2}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg2}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg3}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg3}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg4}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg4}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg5}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg5}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg6}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg6}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg7}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg7}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg8}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg8}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
 
-							<li className="portfolio-details__item">
-								<a href={portfolioImg9} data-fancybox="gallery" className="portfolio-details__link">
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg9}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg10}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg10}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg11}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg11}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg12}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg12}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg13}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg13}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg14}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg14}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg15}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg15}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg9}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg9}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg10}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg10}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg11}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg11}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg12}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg12}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg13}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg13}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg14}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg14}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg15}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg15}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
 
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg16}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg16}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg17}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg17}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg18}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg18}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg19}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg19}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg20}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg20}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg21}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg21}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-							<li className="portfolio-details__item">
-								<a
-									href={portfolioImg22}
-									data-fancybox="gallery"
-									className="portfolio-details__link"
-								>
-									<img
-										className="portfolio-details__img"
-										src={portfolioImg22}
-										alt="Изображения стройки дома"
-									/>
-								</a>
-							</li>
-						</Fancybox>
-					</ul>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg16}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg16}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg17}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg17}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg18}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg18}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg19}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg19}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg20}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg20}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg21}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg21}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+								<li className="portfolio-details__item">
+									<a
+										href={portfolioImg22}
+										data-fancybox="gallery"
+										className="portfolio-details__link"
+									>
+										<img
+											className="portfolio-details__img"
+											src={portfolioImg22}
+											alt="Изображения стройки дома"
+										/>
+									</a>
+								</li>
+							</Fancybox>
+						</ul>
+					</Fade>
+
 					<aside className="portfolio-details__info">
 						<div className="portfolio-details__info-container">
 							<Fade triggerOnce delay="30">
