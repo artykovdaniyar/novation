@@ -11,8 +11,7 @@ import logoImg from "../../../Assets/Img/Icons/logo.svg";
 const headerStyles = css`
 	min-height: 110px;
 	width: 100%;
-	.header {
-		&__container {
+	.header {&__container {
 			position: fixed;
 			top: -120px;
 			transform: translateY(0);
